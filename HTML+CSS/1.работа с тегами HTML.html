@@ -3,10 +3,11 @@
     <head>
         <meta charset utf-8>
         <title>Название вкладки на сайте</title>
+        <link rel="icon" href="2020-07-28_16h29_09.png" type="image/x-icon">
         <link rel="stylesheet" href="Работа с CSS.css">
         <style>
 			p {
-				color: red;
+				color: rgb(30, 255, 0);
 			}
 		</style> 
         <!-- подключение CSS к HTML 3 способа: ссылка на css, style, внутри тега -->
@@ -40,3 +41,50 @@
 <!-- http://old.code.mu/books/css/rabota-s-osnovnymi-html-tegami-i-atributami-dlya-novichkov.html -->
 
 <!-- https://www.youtube.com/watch?v=fYFiQ7lpfiE гит хаб для самых маленькихgit -->
+
+<div style="color: red;"> <!-- Тег div служит контейнером для других тегов. -->
+	<h2>Lorem ipsum dolor sit amet.</h2>
+	<p>	Lorem ipsum dolor sit amet.</p>
+	
+</div>
+
+<p>
+	Lorem ipsum <span style="color: red;">dolor</span> sit amet.
+</p>
+ <!-- Тег span является контейнером для кусочка текста. Вы уже знаете, что для того, чтобы сделать, к примеру, жирный текст - следует использовать тег b. -->
+
+
+
+<p id="test"> <!-- Работа с ID  -->
+	Абзац с атрибутом id в значении "test".
+</p>
+<p>
+	Обычный абзац с текстом.
+</p>
+<p>
+	Обычный абзац с текстом.
+</p>
+
+<!-- Классы задаются с помощью атрибута class, в котором мы пишем имя класса. Их преимущество в том, что один и тот же класс может быть у многих элементов на странице. То есть, если элементы должны вести себя одинаково - мы даем им один и тот же класс.  -->
+
+<h2 class="test">
+	Заголовок h2 с классом test.
+</h2>
+<h2 class="test">
+	Заголовок h2 с классом test.
+</h2>
+<h2 class="test">
+	Заголовок h2 с классом test.
+</h2>
+<p class="test">
+	Абзац с классом test.
+</p>
+<p class="test">
+	Абзац с классом test.
+</p>
+<p class="test">
+	Абзац с классом test.
+</p>
+<p>
+	Абзац без класса.
+</p>
