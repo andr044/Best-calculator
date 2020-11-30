@@ -1,0 +1,38 @@
+info it worked if it ends with ok
+verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+verbose cli   'install',
+verbose cli   '-g',
+verbose cli   '@angular/cli' ]
+info using npm@1.1.0-3
+info using node@v0.6.10
+verbose config file C:\Users\ansmirnov\.npmrc
+verbose config file C:\Program Files (x86)\nodejs\etc\npmrc
+verbose config file C:\Program Files (x86)\nodejs\node_modules\npm\npmrc
+verbose mkdir done: C:\Users\ansmirnov\AppData\Roaming\npm 755
+verbose cache add [ '@angular/cli', null ]
+silly cache add: name, spec, args [ undefined, '@angular/cli', [ '@angular/cli', null ] ]
+verbose parsed url { pathname: '@angular/cli',
+verbose parsed url   path: '@angular/cli',
+verbose parsed url   href: '@angular/cli' }
+silly cache add: name, spec, args [ '', 'angular/cli', [ '', 'angular/cli' ] ]
+verbose parsed url { pathname: 'angular/cli',
+verbose parsed url   path: 'angular/cli',
+verbose parsed url   href: 'angular/cli' }
+ERR! Could not install: angular/cli
+ERR! Error: ENOENT, no such file or directory 'C:\Users\ansmirnov\Desktop\git\Git_for_little\angular\cli'
+ERR! You may report this log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Windows_NT 6.2.9200
+ERR! command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "@angular/cli"
+ERR! cwd C:\Users\ansmirnov\Desktop\git\Git_for_little
+ERR! node -v v0.6.10
+ERR! npm -v 1.1.0-3
+ERR! path C:\Users\ansmirnov\Desktop\git\Git_for_little\angular\cli
+ERR! code ENOENT
+ERR! message ENOENT, no such file or directory 'C:\Users\ansmirnov\Desktop\git\Git_for_little\angular\cli'
+ERR! errno {}
+verbose exit [ 1, true ]
