@@ -14,6 +14,10 @@
         <!-- подключение CSS к HTML 3 способа: ссылка на css, style, внутри тега -->
     </head> 
     <body>
+        <a href="#bot">ВНИЗ</a>
+        <br>
+        <br>
+        <a href="http://old.code.mu/books/css/rabota-s-osnovnymi-html-tegami-i-atributami-dlya-novichkov.html" target="_blank" style="color: darkorange; margin-left: 50%;" > Учебник </a>
         <p>
         <p style="color: rgb(89, 0, 255); font-weight: bold;">
 			Это абзац.
@@ -57,11 +61,12 @@
 </div>
 
 <p>
-	Lorem ipsum <span style="color: red;">dolor</span> sit amet.
+	Lorem ipsum <span style="color: red;">dolor</span> sit amet. <!-- Тег span является контейнером для кусочка текста.-->
+
 </p>
- <!-- Тег span является контейнером для кусочка текста. Вы уже знаете, что для того, чтобы сделать, к примеру, жирный текст - следует использовать тег b. -->
+_________________________________________ 
 
-
+Выбор элемента по уникальному id
 
 <p id="test"> <!-- Работа с ID  -->
 	Абзац с атрибутом id в значении "test".
@@ -96,3 +101,33 @@
 <p>
 	Абзац без класса.
 </p>
+
+<p class="test1"> ПРОВЕРКА</p>
+
+<a href="#">Состояние ссылок</a>
+
+<div class="div">
+    <p>Работа с границами</p>
+</div>
+
+<!-- background -->
+
+<div class="test2"><br>
+    Задаем зеленый цвет фона
+</div>
+<br>
+<div class="test3"></div>
+<br>
+<div class="test4"><br></div>
+
+<!-- margin и padding -->
+<br>
+<div class="test5">
+<div class="test6">
+    привет проверка текст прарвлыа проы сороыв</div>
+</div>
+
+<!-- outline: 4px solid green; - то реальная ширина элемента будет по-прежнему 200px. Визуально ширина будет 202px, но все прочие элементы будут вести себя так, как будто границы нет (она даже может налезть на другие элементы) и ширина элемента 200px.  -->
+
+<!-- box-sizing: content-box | border-box; - не расширяют блок.-->
+

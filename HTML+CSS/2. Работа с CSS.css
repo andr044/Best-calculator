@@ -27,7 +27,21 @@ b {
 		vertical-align: bottom, top; /* Выравнивание. Значение top выравнивает по верхнему краю, значение bottom - по нижнему, а middle - по центру по вертикали */
 		
 	}
-	/* Работа с iD */
+/* ___________________________________________________________________ */
+
+Селекторы CSS
+	Группировка
+	
+	h2, h3, p {
+		color: red;
+	}
+
+	Вложенность
+	div p {
+		color: red;
+	}
+
+	Работа с iD
 	p {
 		color: red;
 	}
@@ -44,4 +58,107 @@ b {
 	}
 	p.test {
 		color: green;
+	}
+
+	/* _________________________________________
+
+Свойство text-decoration	 */
+
+p.test1 {
+	color: purple;
+	text-decoration: underline; /*черта под*/
+	text-decoration: overline;  /* черта над */
+	text-decoration: line-through; /*Перечеркнуто*/
+	text-decoration: none
+}
+
+a:link {
+	color: red; /*непосещенная ссылку*/
+}
+a:visited {
+	color: green;  /*посещенная ссылка*/
+}
+a:hover {
+	color: rgba(224, 205, 35, 0.822);
+	text-decoration: none;  /*навели курсор мышки*/
+}
+a:active {
+	color: blue;  /*нажали мышкой, но еще не отпустили*/
+}
+
+/* Работа с границами 
+
+border-style - может принимать одно из нескольких значений: solid (сплошная линия), dotted (граница в виде точек), dashed (граница в виде черточек), ridge (выпуклая граница), double (двойная граница), groove (вогнутая граница), inset (рамка), outset (рамка) или none (отменяет границу). */
+
+div.div p {
+	border-width: 3px; /* толщина 3px */
+	border-style: double; /* в виде точек */
+	border-color: rgb(98, 0, 255);  /* красный цвет */
+	width: 300px;
+	height: 100px;
+	text-align: center ;
+	font-weight: bold;
+	color: rgb(100, 65, 225);
+	border-radius: 10px 20px 30px 40px;/* радиус */
+	border-right: 1px solid rgb(255, 0, 0); /* какие границы отображать */
+	border-radius: 10px/* радиус */
+}
+/* Работа с фоном background */
+
+div.test2 {
+	width: 300px;
+	height: 100px;
+	color: white;
+	background-color: green; /* задаем зеленый цвет фона */
+}
+
+div.test3 {
+	width: 50%;
+	height: 300px;
+	border: 1px solid black;
+	background-image: url("Без имени.png") /* задаем путь к фоновой картинке */
+}
+
+div.test4 {
+	width: 50%;
+	height: 300px;
+	border: 1px solid black;
+	background-image: url("Без имени.png");
+	background-repeat: no-repeat; /* no-repeat, repeat-x/y  - повторение*/
+	background-position: center bottom;  /* расположение */
+	background-position: 150px 125px;    /* расположение */
+	background-color: rgb(83, 128, 0);
+
+
+}
+
+body {
+	background-image: url("фон.png");
+	background-attachment: fixed ; /* scroll - фиксированый и нефиксированный фон  */
+	background-repeat: no-repeat
+}
+
+/* margin и padding */
+
+/* margin - задает отступ снаружи от границы элемента.  */
+/* padding - делает отступ вовнутрь от границы */
+
+div.test5 {
+	width: 300px;
+	border: 1px solid red;
+	margin-left: 20px
+	
+}
+div.test6 {
+	height: 100px;
+	border: 1px solid green;
+	margin: 30px; /* margin-left, margin-right , margin-top  и margin-bottom  */
+	margin: 10px 20px 30px 40px; /* по часовой начиная сверху  */
+	margin: 10px 30px; /* сверху-снизу, слева-справа  */
+	margin: 10px 20px 30px; /* сверху, снизу, слева-справа  */
+	margin-left: auto;
+	padding-top: 10px; /* сверху */
+	padding-right: 20px; /* справа */
+	padding-bottom: 30px; /* снизу */
+	padding-left: 40px; /* слева */
 	}
